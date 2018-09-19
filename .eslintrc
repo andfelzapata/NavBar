@@ -1,0 +1,18 @@
+{
+  "extends": ["airbnb", "eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+  "settings": {
+    "pragma": "React",
+    "version": "15.2"
+  },
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "jest": true
+  },
+  "rules": {
+    "import/extensions": 0,
+    "import/no-unresolved": 0
+  }
+}
