@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "type": "Product News - Redesigned MySquare",
+    "author": { "name": "Nathan Blesse" },
+    "likes": 0,
+    "title": "Visible Changes",
+    "content": "duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent",
+    "created_at": "12/31/2017",
+    "updated_at": "5/31/2018"
+  },
+  {
+    "id": 2,
+    "type": "Events",
+    "author": { "name": "Kelsy Reitz" },
+    "likes": 12,
+    "title": "[Sign Ups Within] Walk The Block - Coffee Cupping with La Colombe",
+    "content": "felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante",
+    "created_at": "12/10/2017",
+    "updated_at": "8/27/2018"
+  },
+  {
+    "id": 3,
+    "type": "Pinterest News",
+    "author": { "name": "" },
+    "content": "quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper",
+    "created_at": "4/28/2018",
+    "updated_at": "10/5/2017"
+  },
+  {
+    "id": 4,
+    "type": "Events",
+    "author": { "name": "Kelsy Reitz" },
+    "likes": 12,
+    "title": "Toronto Weekly Updates",
+    "content": "rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum",
+    "created_at": "4/21/2018",
+    "updated_at": "12/2/2017"
+  }
+]
