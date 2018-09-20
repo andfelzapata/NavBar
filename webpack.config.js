@@ -9,6 +9,7 @@ const devMode = process.env.NODE_ENV !== "production"
 
 module.exports = {
   devServer: {
+    historyApiFallback: true,
     contentBase: path.join(__dirname, "client"),
     index: "index.html",
     overlay: {
