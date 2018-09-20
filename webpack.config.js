@@ -2,6 +2,8 @@ const path = require("path")
 const webpack = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const CopyWebpackPlugin = require("copy-webpack-plugin")
+const CleanWebpackPlugin = require("clean-webpack-plugin")
 
 const devMode = process.env.NODE_ENV !== "production"
 
@@ -63,6 +65,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: devMode ? "[name].css" : "[name].[hash].css",
       chunkFilename: devMode ? "[name].css" : "[name].[hash].css"
-    })
+    }),
+    new CopyWebpackPlugin([{ from: "./src/mockData/", to: "data" }]),
+    new CleanWebpackPlugin("client")
   ]
 }
