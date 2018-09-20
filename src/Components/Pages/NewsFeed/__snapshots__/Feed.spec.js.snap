@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewsFeed /> Should render self 1`] = `
+<div>
+  Hello Feed
+</div>
+`;
