@@ -86,6 +86,6 @@ module.exports = {
       chunkFilename: devMode ? "[name].css" : "[name].[hash].css"
     }),
     new CopyWebpackPlugin([{ from: "./src/mockData/", to: "data" }]),
-    new CleanWebpackPlugin("client")
+    devMode ? () => null : new CleanWebpackPlugin("client")
   ]
 }

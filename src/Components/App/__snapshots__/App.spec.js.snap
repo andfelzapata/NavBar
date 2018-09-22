@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> Should render self 1`] = `
+<div
+  class="App"
+>
+  <nav
+    class="navbar is-transparent"
+  >
+    <div
+      class="navbar-brand"
+    >
+      <a
+        aria-current="page"
+        class="navbar-item active"
+        href="/"
+      >
+        <img
+          src="test-file-stub"
+        />
+      </a>
+      <div
+        class="navbar-burger burger"
+      >
+        <span />
+        <span />
+        <span />
+      </div>
+    </div>
+    <div
+      class="navbar-menu"
+    >
+      <div
+        class="navbar-start"
+      >
+        <a
+          class="navbar-item"
+          href="/feed"
+        >
+          News
+        </a>
+        <a
+          class="navbar-item"
+          href="/people"
+        >
+          People
+        </a>
+        <a
+          class="navbar-item"
+        >
+          Food
+        </a>
+        <a
+          class="navbar-item"
+        >
+          Admin
+        </a>
+        <a
+          class="navbar-item"
+        >
+          More
+        </a>
+      </div>
+      <div
+        class="navbar-end"
+      />
+    </div>
+  </nav>
+</div>
+`;
