@@ -44,6 +44,23 @@ module.exports = {
           { loader: "postcss-loader" },
           { loader: "sass-loader" }
         ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ["file-loader"]
+      },
+      {
+        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/", // where the fonts will go
+              publicPath: "../" // override the default path
+            }
+          }
+        ]
       }
     ]
   },
@@ -53,7 +70,8 @@ module.exports = {
     alias: {
       Components: path.resolve(__dirname, "src/Components"),
       utils: path.resolve(__dirname, "src/utils"),
-      reducers: path.resolve(__dirname, "src/reducers")
+      reducers: path.resolve(__dirname, "src/reducers"),
+      img: path.resolve(__dirname, "src/img")
     }
   },
   plugins: [
