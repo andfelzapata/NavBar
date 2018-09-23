@@ -6,7 +6,7 @@ import "./NavLinkBrand.scss"
 const NavLInkBrand = () => (
   <NavLink className="NavLInkBrand navbar-item" to="/">
     <img src={Logo} />
-    <span className="BrandName">Pintrest</span>
+    <span className="BrandName is-size-5">Pintrest</span>
   </NavLink>
 )
 

@@ -14,8 +14,8 @@ class ProfileDropdown extends PureComponent {
     this.setState({ isActive: !isActive })
   }
 
-  handleClickOutside() {
-    this.toggleDropdown()
+  handleClickOutside(ev) {
+    this.setState({ isActive: false })
   }
 
   render() {

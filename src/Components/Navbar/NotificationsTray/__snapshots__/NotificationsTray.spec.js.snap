@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NotificationsTray /> Should render self 1`] = `
+<div
+  class="NotificationsTray navbar-item"
+>
+  <a
+    class="button"
+  >
+    <i
+      class="fa fa-bell"
+    />
+    <span
+      class="Notifications__Count"
+    >
+      7
+       +
+    </span>
+  </a>
+</div>
+`;

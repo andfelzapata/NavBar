@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavLinBrand /> Should render self 1`] = `
+<a
+  aria-current="page"
+  class="NavLInkBrand navbar-item active"
+  href="/"
+>
+  <img
+    src="test-file-stub"
+  />
+  <span
+    class="BrandName is-size-5"
+  >
+    Pintrest
+  </span>
+</a>
+`;

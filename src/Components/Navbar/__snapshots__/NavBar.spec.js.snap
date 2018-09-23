@@ -16,7 +16,7 @@ exports[`<NavBar /> Should render self 1`] = `
         src="test-file-stub"
       />
       <span
-        class="BrandName"
+        class="BrandName is-size-5"
       >
         Pintrest
       </span>
@@ -36,29 +36,29 @@ exports[`<NavBar /> Should render self 1`] = `
       class="navbar-start"
     >
       <a
-        class="navbar-item is-size-7"
+        class="navbar-item"
         href="/feed"
       >
         News
       </a>
       <a
-        class="navbar-item is-size-7"
+        class="navbar-item"
         href="/people"
       >
         People
       </a>
       <a
-        class="navbar-item is-size-7"
+        class="navbar-item"
       >
         Food
       </a>
       <a
-        class="navbar-item is-size-7"
+        class="navbar-item"
       >
         Admin
       </a>
       <a
-        class="navbar-item is-size-7"
+        class="navbar-item"
       >
         More
       </a>
@@ -66,7 +66,7 @@ exports[`<NavBar /> Should render self 1`] = `
         class="SearchBar control has-icons-left navbar-item"
       >
         <input
-          class="input is-size-7 has-text-red"
+          class="input"
           placeholder="Find a Pintrest"
           type="text"
         />
@@ -77,6 +77,27 @@ exports[`<NavBar /> Should render self 1`] = `
             class="fa fa fa-search"
           />
         </span>
+      </div>
+    </div>
+    <div
+      class="navbar-end"
+    >
+      <div
+        class="NotificationsTray navbar-item"
+      >
+        <a
+          class="button"
+        >
+          <i
+            class="fa fa-bell"
+          />
+          <span
+            class="Notifications__Count"
+          >
+            7
+             +
+          </span>
+        </a>
       </div>
       <div
         class="ProfileDropdown dropdown navbar-item"
@@ -128,9 +149,6 @@ exports[`<NavBar /> Should render self 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="navbar-end"
-    />
   </div>
 </nav>
 `;
