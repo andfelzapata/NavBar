@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchBar /> Should render self 1`] = `
+<div
+  class="SearchBar control has-icons-left navbar-item"
+>
+  <input
+    class="input is-size-7"
+    placeholder="Find a Pintrest"
+    type="text"
+  />
+  <span
+    class="icon is-small is-left"
+  >
+    <i
+      class="fa fa fa-search"
+    />
+  </span>
+</div>
+`;

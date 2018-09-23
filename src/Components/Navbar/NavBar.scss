@@ -1,0 +1,16 @@
+@import "styles/variables.scss";
+
+.NavBar {
+  a.navbar-item {
+    color: $color-gray-text;
+
+    &:hover {
+      background: none;
+      color: $color-black-text;
+    }
+
+    &.NavLink_Selected {
+      color: $color-black-text;
+    }
+  }
+}

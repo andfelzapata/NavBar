@@ -1,0 +1,24 @@
+@import "styles/variables.scss";
+
+.SearchBar {
+  width: 100%;
+  &.control.has-icons-left {
+    .input {
+      padding-left: 4em;
+    }
+
+    .icon.is-left {
+      top: initial;
+      left: 1.5rem;
+    }
+  }
+
+  input {
+    background: $color-gray-bg;
+    height: 2.8rem;
+
+    &::placeholder {
+      color: $color-black-text;
+    }
+  }
+}
