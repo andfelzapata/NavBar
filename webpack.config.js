@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const CleanWebpackPlugin = require("clean-webpack-plugin")
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin")
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 
 const devMode = process.env.NODE_ENV !== "production"
 
@@ -21,6 +23,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "client"),
     filename: "[name].js"
+  },
+  optimization: {
+    namedChunks: true,
+    minimizer: [new UglifyJsPlugin({}), new OptimizeCSSAssetsPlugin({})]
   },
   module: {
     rules: [
@@ -56,8 +62,7 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "fonts/", // where the fonts will go
-              publicPath: "../" // override the default path
+              outputPath: "fonts/"
             }
           }
         ]
