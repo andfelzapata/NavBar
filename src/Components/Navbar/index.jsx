@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom"
 import Logo from "img/pinterest-logo.png"
 import NavLinkBrand from "Components/Navbar/NavLinkBrand"
 import SearchBar from "Components/Common/SearchBar"
+import ProfileDropdown from "./ProfileDropdown"
 import "./NavBar.scss"
 
 const NavBar = () => (
@@ -36,6 +37,7 @@ const NavBar = () => (
         <a className="navbar-item is-size-7">Admin</a>
         <a className="navbar-item is-size-7">More</a>
         <SearchBar />
+        <ProfileDropdown />
       </div>
       <div className="navbar-end" />
     </div>
