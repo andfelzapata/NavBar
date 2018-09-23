@@ -4,7 +4,7 @@ import "./SearchBar.scss"
 const SearchBar = () => (
   <div className="SearchBar control has-icons-left navbar-item">
     <input
-      className="input is-size-7"
+      className="input is-size-7 has-text-red"
       type="text"
       placeholder="Find a Pintrest"
     />

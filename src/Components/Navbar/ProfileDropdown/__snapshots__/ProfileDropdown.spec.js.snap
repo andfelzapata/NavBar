@@ -11,6 +11,7 @@ exports[`<ProfileDropdown /> Should render self 1`] = `
       aria-controls="ProfileDropdown"
       aria-haspopup="true"
       class="button"
+      data-testid="ProfileButton"
     >
       <img
         class="image"

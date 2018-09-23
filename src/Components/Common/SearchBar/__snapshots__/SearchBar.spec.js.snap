@@ -5,7 +5,7 @@ exports[`<SearchBar /> Should render self 1`] = `
   class="SearchBar control has-icons-left navbar-item"
 >
   <input
-    class="input is-size-7"
+    class="input is-size-7 has-text-red"
     placeholder="Find a Pintrest"
     type="text"
   />

@@ -66,7 +66,7 @@ exports[`<NavBar /> Should render self 1`] = `
         class="SearchBar control has-icons-left navbar-item"
       >
         <input
-          class="input is-size-7"
+          class="input is-size-7 has-text-red"
           placeholder="Find a Pintrest"
           type="text"
         />
@@ -77,6 +77,55 @@ exports[`<NavBar /> Should render self 1`] = `
             class="fa fa fa-search"
           />
         </span>
+      </div>
+      <div
+        class="ProfileDropdown dropdown navbar-item"
+      >
+        <div
+          class="dropdown-trigger"
+        >
+          <button
+            aria-controls="ProfileDropdown"
+            aria-haspopup="true"
+            class="button"
+            data-testid="ProfileButton"
+          >
+            <img
+              class="image"
+              src="test-file-stub"
+            />
+            <span
+              class="icon is-small"
+            >
+              <i
+                aria-hidden="true"
+                class="fa fa-caret-down"
+              />
+            </span>
+          </button>
+        </div>
+        <div
+          class="dropdown-menu"
+          id="ProfileDropdown"
+          role="menu"
+        >
+          <div
+            class="dropdown-content"
+          >
+            <a
+              class="dropdown-item"
+              href="#"
+            >
+              Settings
+            </a>
+            <a
+              class="dropdown-item"
+              href="#"
+            >
+              Sign Out
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div
