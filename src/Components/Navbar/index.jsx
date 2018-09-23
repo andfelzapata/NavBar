@@ -2,6 +2,7 @@ import React from "react"
 import { NavLink } from "react-router-dom"
 import Logo from "img/pinterest-logo.png"
 import NavLinkBrand from "Components/Navbar/NavLinkBrand"
+import SearchBar from "Components/Common/SearchBar"
 
 const NavBar = () => (
   <nav className="navbar is-transparent">
@@ -25,8 +26,8 @@ const NavBar = () => (
         <a className="navbar-item">Food</a>
         <a className="navbar-item">Admin</a>
         <a className="navbar-item">More</a>
+        <SearchBar />
       </div>
-
       <div className="navbar-end" />
     </div>
   </nav>
