@@ -1,0 +1,25 @@
+@import "styles/variables.scss";
+
+.ProfileDropdown {
+  .dropdown-trigger {
+    height: 100%;
+  }
+
+  .dropdown-trigger button {
+    border-radius: 2rem;
+    height: 100%;
+    padding: 0;
+  }
+
+  img.image {
+    max-height: 2.5rem;
+    margin: 0 10px 0 0;
+  }
+
+  .button .icon.is-small {
+    margin: 0 10px 0 0 !important;
+    i {
+      color: $color-gray-text;
+    }
+  }
+}

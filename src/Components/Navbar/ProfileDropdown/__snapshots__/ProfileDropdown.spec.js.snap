@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfileDropdown /> Should render self 1`] = `
+<div
+  class="ProfileDropdown dropdown navbar-item"
+>
+  <div
+    class="dropdown-trigger"
+  >
+    <button
+      aria-controls="ProfileDropdown"
+      aria-haspopup="true"
+      class="button"
+    >
+      <img
+        class="image"
+        src="test-file-stub"
+      />
+      <span
+        class="icon is-small"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-caret-down"
+        />
+      </span>
+    </button>
+  </div>
+  <div
+    class="dropdown-menu"
+    id="ProfileDropdown"
+    role="menu"
+  >
+    <div
+      class="dropdown-content"
+    >
+      <a
+        class="dropdown-item"
+        href="#"
+      >
+        Settings
+      </a>
+      <a
+        class="dropdown-item"
+        href="#"
+      >
+        Sign Out
+      </a>
+    </div>
+  </div>
+</div>
+`;
