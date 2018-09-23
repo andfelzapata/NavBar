@@ -76,7 +76,8 @@ module.exports = {
       Components: path.resolve(__dirname, "src/Components"),
       utils: path.resolve(__dirname, "src/utils"),
       reducers: path.resolve(__dirname, "src/reducers"),
-      img: path.resolve(__dirname, "src/img")
+      img: path.resolve(__dirname, "src/img"),
+      styles: path.resolve(__dirname, "src/styles")
     }
   },
   plugins: [
