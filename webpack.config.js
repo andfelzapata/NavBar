@@ -73,6 +73,8 @@ module.exports = {
     extensions: [".js", ".jsx", ".scss"],
     modules: ["node_modules"],
     alias: {
+      src: path.resolve(__dirname, "src"),
+      mockData: path.resolve(__dirname, "src/mockData"),
       Components: path.resolve(__dirname, "src/Components"),
       utils: path.resolve(__dirname, "src/utils"),
       reducers: path.resolve(__dirname, "src/reducers"),
