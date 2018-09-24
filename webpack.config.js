@@ -75,9 +75,11 @@ module.exports = {
     alias: {
       src: path.resolve(__dirname, "src"),
       mockData: path.resolve(__dirname, "src/mockData"),
+      Pages: path.resolve(__dirname, "src/Components/Pages"),
       Components: path.resolve(__dirname, "src/Components"),
       utils: path.resolve(__dirname, "src/utils"),
       reducers: path.resolve(__dirname, "src/reducers"),
+      selectors: path.resolve(__dirname, "src/selectors"),
       img: path.resolve(__dirname, "src/img"),
       styles: path.resolve(__dirname, "src/styles")
     }
