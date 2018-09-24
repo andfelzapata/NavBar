@@ -3,7 +3,7 @@ import { node } from "prop-types"
 import "./PageContainer.scss"
 
 const PageContainer = ({ children }) => (
-  <div className="PageContainer">{children}</div>
+  <div className="PageContainer container">{children}</div>
 )
 
 PageContainer.propTypes = {

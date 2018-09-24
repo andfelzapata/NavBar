@@ -1,6 +1,11 @@
-import React from "react"
+import React, { PureComponent } from "react"
+import { connect } from "react-redux"
 import PageContainer from "Pages/PageContainer"
 
-const Feed = () => <PageContainer>Hello Feed</PageContainer>
+class NewsFeed extends PureComponent {
+  render() {
+    return <PageContainer>Hello News Feed</PageContainer>
+  }
+}
 
-export default Feed
+export default NewsFeed
