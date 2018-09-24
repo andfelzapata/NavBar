@@ -1,7 +1,7 @@
 import React from "react"
 import { render, cleanup, fireEvent } from "react-testing-library"
-import NotificationsTray from "./index"
 import notifications from "mockData/notifications/index.js"
+import NotificationsTray from "./index"
 import "jest-dom/extend-expect"
 
 describe("<NotificationsTray />", () => {

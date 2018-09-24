@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Profile /> Should render self 1`] = `
-<div>
+<div
+  class="PageContainer"
+>
   Hello Profile
 </div>
 `;

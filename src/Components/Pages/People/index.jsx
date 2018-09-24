@@ -1,5 +1,6 @@
 import React from "react"
+import PageContainer from "Pages/PageContainer"
 
-const People = () => <div>Hello People</div>
+const People = () => <PageContainer>Hello People</PageContainer>
 
 export default People

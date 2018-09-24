@@ -1,6 +1,5 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
-import Logo from "img/pinterest-logo.png"
 import notifications from "mockData/notifications/index"
 import NavLinkBrand from "Components/Navbar/NavLinkBrand"
 import SearchBar from "Components/Common/SearchBar"
@@ -36,9 +35,15 @@ const NavBar = () => (
         >
           People
         </NavLink>
-        <a className="navbar-item">Food</a>
-        <a className="navbar-item">Admin</a>
-        <a className="navbar-item">More</a>
+        <NavLink className="navbar-item" to="/food">
+          Food
+        </NavLink>
+        <NavLink className="navbar-item" to="/admin">
+          Admin
+        </NavLink>
+        <NavLink className="navbar-item" to="/more">
+          More
+        </NavLink>
         <SearchBar />
       </div>
       <div className="navbar-end">

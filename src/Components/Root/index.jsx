@@ -1,5 +1,5 @@
 import React from "react"
-import { object } from "prop-types"
+import { shape } from "prop-types"
 import { Provider } from "react-redux"
 import { BrowserRouter as Router } from "react-router-dom"
 import App from "Components/App"
@@ -13,7 +13,7 @@ const Root = ({ store }) => (
 )
 
 Root.propTypes = {
-  store: object.isRequired
+  store: shape({}).isRequired
 }
 
 export default Root

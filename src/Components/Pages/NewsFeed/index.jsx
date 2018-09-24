@@ -1,5 +1,6 @@
 import React from "react"
+import PageContainer from "Pages/PageContainer"
 
-const Feed = () => <div>Hello Feed</div>
+const Feed = () => <PageContainer>Hello Feed</PageContainer>
 
 export default Feed

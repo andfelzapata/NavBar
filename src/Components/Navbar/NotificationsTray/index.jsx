@@ -4,12 +4,19 @@ import "./NotificationsTray.scss"
 
 const NotificationsTray = ({ notifications }) => (
   <div className="NotificationsTray navbar-item">
-    <a className="button">
+    <button
+      className="button"
+      type="button"
+      onClick={ev => ev.preventDefault()}
+    >
       <i className="fa fa-bell" />
       {notifications.length > 0 && (
-        <span className="Notifications__Count">{notifications.length} +</span>
+        <span className="Notifications__Count">
+          {notifications.length}
+          {"+"}
+        </span>
       )}
-    </a>
+    </button>
   </div>
 )
 

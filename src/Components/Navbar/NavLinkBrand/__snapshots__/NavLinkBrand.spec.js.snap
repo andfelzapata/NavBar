@@ -7,12 +7,13 @@ exports[`<NavLinBrand /> Should render self 1`] = `
   href="/"
 >
   <img
+    alt="Pinterest"
     src="test-file-stub"
   />
   <span
     class="BrandName is-size-5"
   >
-    Pintrest
+    Pinterest
   </span>
 </a>
 `;

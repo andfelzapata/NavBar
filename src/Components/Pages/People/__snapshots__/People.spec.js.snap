@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<NewsFeed /> Should render self 1`] = `
+exports[`<People /> Should render self 1`] = `
 <div
   class="PageContainer"
 >
-  Hello Feed
+  Hello People
 </div>
 `;

@@ -1,13 +1,29 @@
 import React from "react"
+import { string } from "prop-types"
 import { NavLink } from "react-router-dom"
-import Logo from "img/pinterest-logo.png"
+import { connect } from "react-redux"
+import themeSelector from "selectors/themeSelector"
+import Pinterest from "img/pinterest-logo.png"
+import Square from "img/square-logo.png"
 import "./NavLinkBrand.scss"
 
-const NavLInkBrand = () => (
+const NavLInkBrand = ({ theme }) => (
   <NavLink className="NavLInkBrand navbar-item" to="/">
-    <img src={Logo} />
-    <span className="BrandName is-size-5">Pintrest</span>
+    {theme === "Pinterest" ? (
+      <img src={Pinterest} alt={theme} />
+    ) : (
+      <img src={Square} alt={theme} />
+    )}
+    <span className="BrandName is-size-5">{theme}</span>
   </NavLink>
 )
 
-export default NavLInkBrand
+const mapStateToProps = state => ({
+  theme: themeSelector(state)
+})
+
+NavLInkBrand.propTypes = {
+  theme: string.isRequired
+}
+
+export default connect(mapStateToProps)(NavLInkBrand)

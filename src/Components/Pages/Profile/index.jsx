@@ -1,5 +1,6 @@
 import React from "react"
+import PageContainer from "Pages/PageContainer"
 
-const Profile = () => <div>Hello Profile</div>
+const Profile = () => <PageContainer>Hello Profile</PageContainer>
 
 export default Profile

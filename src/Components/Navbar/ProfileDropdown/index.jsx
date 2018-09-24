@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react"
 import classNames from "classnames"
 import enhanceWithClickOutside from "react-click-outside"
+import { NavLink } from "react-router-dom"
 import userImage from "img/user@2x.png"
 import "./ProfileDropdown.scss"
 
@@ -14,7 +15,7 @@ class ProfileDropdown extends PureComponent {
     this.setState({ isActive: !isActive })
   }
 
-  handleClickOutside(ev) {
+  handleClickOutside() {
     this.setState({ isActive: false })
   }
 
@@ -29,12 +30,13 @@ class ProfileDropdown extends PureComponent {
         <div className="dropdown-trigger">
           <button
             data-testid="ProfileButton"
+            type="button"
             className="button"
             aria-haspopup="true"
             aria-controls="ProfileDropdown"
             onClick={() => this.toggleDropdown()}
           >
-            <img className="image" src={userImage} />
+            <img className="image" src={userImage} alt="Profile" />
             <span className="icon is-small">
               <i className="fa fa-caret-down" aria-hidden="true" />
             </span>
@@ -42,12 +44,12 @@ class ProfileDropdown extends PureComponent {
         </div>
         <div className="dropdown-menu" id="ProfileDropdown" role="menu">
           <div className="dropdown-content">
-            <a href="#" className="dropdown-item">
+            <NavLink to="/settings" className="dropdown-item">
               Settings
-            </a>
-            <a href="#" className="dropdown-item">
+            </NavLink>
+            <NavLink to="/sign-out" className="dropdown-item">
               Sign Out
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

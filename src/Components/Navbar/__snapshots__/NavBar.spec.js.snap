@@ -13,12 +13,13 @@ exports[`<NavBar /> Should render self 1`] = `
       href="/"
     >
       <img
+        alt="Pinterest"
         src="test-file-stub"
       />
       <span
         class="BrandName is-size-5"
       >
-        Pintrest
+        Pinterest
       </span>
     </a>
     <div
@@ -49,16 +50,19 @@ exports[`<NavBar /> Should render self 1`] = `
       </a>
       <a
         class="navbar-item"
+        href="/food"
       >
         Food
       </a>
       <a
         class="navbar-item"
+        href="/admin"
       >
         Admin
       </a>
       <a
         class="navbar-item"
+        href="/more"
       >
         More
       </a>
@@ -85,8 +89,9 @@ exports[`<NavBar /> Should render self 1`] = `
       <div
         class="NotificationsTray navbar-item"
       >
-        <a
+        <button
           class="button"
+          type="button"
         >
           <i
             class="fa fa-bell"
@@ -95,9 +100,9 @@ exports[`<NavBar /> Should render self 1`] = `
             class="Notifications__Count"
           >
             7
-             +
+            +
           </span>
-        </a>
+        </button>
       </div>
       <div
         class="ProfileDropdown dropdown navbar-item"
@@ -110,8 +115,10 @@ exports[`<NavBar /> Should render self 1`] = `
             aria-haspopup="true"
             class="button"
             data-testid="ProfileButton"
+            type="button"
           >
             <img
+              alt="Profile"
               class="image"
               src="test-file-stub"
             />
@@ -135,13 +142,13 @@ exports[`<NavBar /> Should render self 1`] = `
           >
             <a
               class="dropdown-item"
-              href="#"
+              href="/settings"
             >
               Settings
             </a>
             <a
               class="dropdown-item"
-              href="#"
+              href="/sign-out"
             >
               Sign Out
             </a>
