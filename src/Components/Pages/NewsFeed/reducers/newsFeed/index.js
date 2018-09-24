@@ -36,7 +36,13 @@ const getNewsFeed = state => state.NewsFeed.feed
 
 const getNewsFeedLoading = state => state.NewsFeed.isLoading
 
-export const newsFeedSelector = createSelector([getNewsFeed], feed => feed)
+export const newsFeedSelector = createSelector([getNewsFeed], feed => {
+  return feed.sort(function compare(a, b) {
+    const dateA = new Date(a.updated_at)
+    const dateB = new Date(b.updated_at)
+    return dateB - dateA
+  })
+})
 
 export const newsFeedLoadingSelector = createSelector(
   [getNewsFeedLoading],
