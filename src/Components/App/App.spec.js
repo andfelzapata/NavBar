@@ -3,10 +3,14 @@ import { render, cleanup } from "react-testing-library"
 import { BrowserRouter as Router } from "react-router-dom"
 import configureMockStore from "redux-mock-store"
 import { Provider } from "react-redux"
-import App from "./index"
+import ReduxThunk from "redux-thunk"
+import { App } from "./index"
 
-const mockStore = configureMockStore()
-const store = mockStore({ Theme: { themeName: "Pinterest" } })
+const mockStore = configureMockStore([ReduxThunk])
+const store = mockStore({
+  Theme: { themeName: "Pinterest" },
+  NewsFeed: { feed: [] }
+})
 
 describe("<App />", () => {
   afterEach(cleanup)
@@ -14,7 +18,7 @@ describe("<App />", () => {
     const { container } = render(
       <Router>
         <Provider store={store}>
-          <App />
+          <App theme="Pinterest" />
         </Provider>
       </Router>
     )

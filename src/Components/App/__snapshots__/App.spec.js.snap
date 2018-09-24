@@ -162,10 +162,8 @@ exports[`<App /> Should render self 1`] = `
     </div>
   </nav>
   <div
-    class="PageContainer"
-  >
-    Hello Feed
-  </div>
+    class="PageContainer container"
+  />
   <footer>
     <div
       class="ThemeSwitcher field Pinterest"
