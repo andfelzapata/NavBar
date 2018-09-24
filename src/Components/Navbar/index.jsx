@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, withRouter } from "react-router-dom"
 import classNames from "classnames"
 import enhanceWithClickOutside from "react-click-outside"
 import notifications from "mockData/notifications/index"
@@ -88,4 +88,4 @@ class NavBar extends PureComponent {
   }
 }
 
-export default enhanceWithClickOutside(NavBar)
+export default withRouter(enhanceWithClickOutside(NavBar))
