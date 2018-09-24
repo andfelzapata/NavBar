@@ -5,6 +5,7 @@ import Spinner from "Components/Common/Spinner"
 import PageContainer from "Pages/PageContainer"
 import getNewsFeed from "./actions"
 import { newsFeedSelector, newsFeedLoadingSelector } from "./reducers"
+import FeedList from "./Components/FeedList"
 
 class NewsFeed extends PureComponent {
   componentDidMount() {
@@ -15,7 +16,12 @@ class NewsFeed extends PureComponent {
     const { feed, feedLoading } = this.props
     return (
       <PageContainer>
-        {!feedLoading && feed.map(f => f.content)}
+        <div className="columns">
+          <div className="column" />
+          <div className="column is-3" />
+          <FeedList feed={feed} />
+          <div className="column" />
+        </div>
         <Spinner isLoading={feedLoading} />
       </PageContainer>
     )
