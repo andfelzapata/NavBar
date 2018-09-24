@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageContainer /> Should render self 1`] = `
+<div
+  class="PageContainer container"
+/>
+`;
