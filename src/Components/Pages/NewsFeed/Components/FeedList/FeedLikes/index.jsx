@@ -15,9 +15,9 @@ const FeedLikes = ({ feed: { likes } }) => (
     <span className="Likes__Count is-size-6">
       {likes > 0 && (
         <span>
-          {likes}
+          {`${likes} `}
           {colleagues(likes)}
-          liked this
+          {" liked this"}
         </span>
       )}
     </span>
