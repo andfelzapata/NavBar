@@ -1,0 +1,11 @@
+@import "styles/variables.scss";
+
+.FeedHeader {
+  margin: 20px 0;
+  .title {
+    color: $color-black-text;
+  }
+  .subtitle {
+    color: $color-gray-content-text;
+  }
+}
