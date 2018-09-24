@@ -2,8 +2,6 @@
 
 exports[`<NewsFeed /> Should render self 1`] = `
 <div
-  class="PageContainer"
->
-  Hello Feed
-</div>
+  class="PageContainer container"
+/>
 `;
