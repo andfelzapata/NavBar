@@ -95,7 +95,7 @@ module.exports = {
       filename: devMode ? "[name].css" : "[name].[hash].css",
       chunkFilename: devMode ? "[name].css" : "[name].[hash].css"
     }),
-    new CopyWebpackPlugin([{ from: "./src/mockData/", to: "data" }]),
+    new CopyWebpackPlugin([{ from: "./src/mockData/", to: "api" }]),
     devMode ? () => null : new CleanWebpackPlugin("client")
   ]
 }
