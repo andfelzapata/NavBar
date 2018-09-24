@@ -1,4 +1,5 @@
 import ActionTypes from "../actionTypes"
+import { createSelector } from "reselect"
 
 const defaultState = {
   themeName: "Pinterest"
@@ -16,3 +17,10 @@ export default function ThemeStore(state = defaultState, action) {
       return state
   }
 }
+
+const getCurrentTheme = state => state.Theme.themeName
+
+export const currentThemeSelector = createSelector(
+  [getCurrentTheme],
+  themeName => themeName
+)

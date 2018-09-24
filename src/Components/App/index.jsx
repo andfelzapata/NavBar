@@ -8,10 +8,10 @@ import NavBar from "Components/Navbar"
 import PageContainer from "Pages/PageContainer"
 import ThemeSwitcher from "Components/Common/ThemeSwitcher"
 import { connect } from "react-redux"
-import themeSelector from "selectors/themeSelector"
+import { currentThemeSelector } from "selectors"
 import "./App.scss"
 
-const App = ({ theme }) => (
+export const App = ({ theme }) => (
   <div className={`App ${theme}__Theme`}>
     <NavBar />
     <Switch>
@@ -31,7 +31,7 @@ const App = ({ theme }) => (
 )
 
 const mapStateToProps = state => ({
-  theme: themeSelector(state)
+  theme: currentThemeSelector(state)
 })
 
 App.propTypes = {

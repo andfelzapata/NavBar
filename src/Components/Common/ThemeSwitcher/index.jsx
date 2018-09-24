@@ -2,7 +2,7 @@ import React, { PureComponent } from "react"
 import classNames from "classnames"
 import { func, string } from "prop-types"
 import { connect } from "react-redux"
-import themeSelector from "selectors/themeSelector"
+import { currentThemeSelector } from "./reducers"
 import switchTheme from "./actions"
 import "./ThemeSwitcher.scss"
 
@@ -37,7 +37,7 @@ ThemeSwitcher.propTypes = {
 }
 
 const mapStateToProps = state => ({
-  theme: themeSelector(state)
+  theme: currentThemeSelector(state)
 })
 
 const mapDispatchToProps = {

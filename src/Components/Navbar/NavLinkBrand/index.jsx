@@ -2,7 +2,7 @@ import React from "react"
 import { string } from "prop-types"
 import { NavLink } from "react-router-dom"
 import { connect } from "react-redux"
-import themeSelector from "selectors/themeSelector"
+import { currentThemeSelector } from "selectors"
 import Pinterest from "img/pinterest-logo.png"
 import Square from "img/square-logo.png"
 import "./NavLinkBrand.scss"
@@ -19,7 +19,7 @@ const NavLInkBrand = ({ theme }) => (
 )
 
 const mapStateToProps = state => ({
-  theme: themeSelector(state)
+  theme: currentThemeSelector(state)
 })
 
 NavLInkBrand.propTypes = {
