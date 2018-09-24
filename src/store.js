@@ -5,7 +5,7 @@ import rootReducer from "reducers"
 
 const middleWares = [ReduxThunk]
 
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV === `development`) {
   middleWares.push(ReduxLogger)
 }
 
