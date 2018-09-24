@@ -2,7 +2,7 @@ import { createSelector } from "reselect"
 import ActionTypes from "../../actionTypes/userProfile/index"
 
 const defaultState = {
-  profile: [],
+  profile: {},
   isLoading: false,
   err: null
 }

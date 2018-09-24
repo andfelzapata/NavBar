@@ -1,9 +1,6 @@
 import request from "utils/request/index"
 import ActionTypes from "../../actionTypes/newsFeed/index"
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
+import sleep from "../helpers"
 
 const getNewsFeedRequest = () => {
   return {

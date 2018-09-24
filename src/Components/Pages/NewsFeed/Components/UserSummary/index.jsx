@@ -12,29 +12,33 @@ class UserSummary extends PureComponent {
   }
   render() {
     const { user } = this.props
-    return (
-      <div className="UserSummary">
-        <div className="card">
-          <div className="card-content">
-            <div className="media">
-              <div className="media-left">
-                <figure className="image is-48x48">
-                  <img src={userImage} alt="User" />
-                </figure>
-              </div>
-              <div className="media-content">
-                <p className="title is-size-4">
-                  {`${user.first_name} ${user.last_name}`}
-                </p>
-                <p className="subtitle is-size-6">{user.interests}</p>
-              </div>
-            </div>
+    const dataPresent = Object.keys(user).length > 0
 
-            <div className="content is-size-6">{user.bio}</div>
-            <hr />
+    return (
+      dataPresent && (
+        <div className="UserSummary">
+          <div className="card">
+            <div className="card-content">
+              <div className="media">
+                <div className="media-left">
+                  <figure className="image is-48x48">
+                    <img src={userImage} alt="User" />
+                  </figure>
+                </div>
+                <div className="media-content">
+                  <p className="title is-size-4">
+                    {`${user.first_name} ${user.last_name}`}
+                  </p>
+                  <p className="subtitle is-size-6">{user.interests}</p>
+                </div>
+              </div>
+
+              <div className="content is-size-6">{user.bio}</div>
+              <hr />
+            </div>
           </div>
         </div>
-      </div>
+      )
     )
   }
 }
@@ -50,10 +54,10 @@ const mapDispatchToProps = {
 UserSummary.propTypes = {
   getUserProfile: func.isRequired,
   user: shape({
-    bio: string.isRequired,
-    interests: string.isRequired,
-    first_name: string.isRequired,
-    last_name: string.isRequired
+    bio: string,
+    interests: string,
+    first_name: string,
+    last_name: string
   }).isRequired
 }
 

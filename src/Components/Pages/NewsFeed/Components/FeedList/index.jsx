@@ -14,23 +14,24 @@ const FeedList = ({ feed }) => (
   <div className="FeedList column is-7">
     <p className="FeedList__Header">LATEST</p>
     <div className="FeedList__Items">
-      {feed.map(f => (
-        <div className="content" key={f.id}>
-          <div className="box">
-            <div className="level">
-              <FeedIcon feed={f} />
-              <FeedActions />
+      {feed.length > 0 &&
+        feed.map(f => (
+          <div className="content" key={f.id}>
+            <div className="box">
+              <div className="level">
+                <FeedIcon feed={f} />
+                <FeedActions />
+              </div>
+              <FeedHeader feed={f} />
+              <div
+                className="Feed_Content"
+                dangerouslySetInnerHTML={createContentMarkup(f.content)}
+              />
+              <hr />
+              <FeedLikes feed={f} />
             </div>
-            <FeedHeader feed={f} />
-            <div
-              className="Feed_Content"
-              dangerouslySetInnerHTML={createContentMarkup(f.content)}
-            />
-            <hr />
-            <FeedLikes feed={f} />
           </div>
-        </div>
-      ))}
+        ))}
     </div>
   </div>
 )

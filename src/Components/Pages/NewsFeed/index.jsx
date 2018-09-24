@@ -5,6 +5,7 @@ import Spinner from "Components/Common/Spinner"
 import PageContainer from "Pages/PageContainer"
 import getNewsFeed from "./actions/newsFeed"
 import { newsFeedSelector, newsFeedLoadingSelector } from "./reducers/newsFeed"
+import { userProfileLoadingSelector } from "./reducers/userProfile"
 import FeedList from "./Components/FeedList"
 import UserSummary from "./Components/UserSummary"
 
@@ -14,7 +15,7 @@ class NewsFeed extends PureComponent {
     getNewsFeed()
   }
   render() {
-    const { feed, feedLoading } = this.props
+    const { feed, feedLoading, userLoading } = this.props
     return (
       <PageContainer>
         <div className="columns">
@@ -27,7 +28,7 @@ class NewsFeed extends PureComponent {
           <FeedList feed={feed} />
           <div className="column" />
         </div>
-        <Spinner isLoading={feedLoading} />
+        <Spinner isLoading={feedLoading || userLoading} />
       </PageContainer>
     )
   }
@@ -35,7 +36,8 @@ class NewsFeed extends PureComponent {
 
 const mapStateToProps = state => ({
   feed: newsFeedSelector(state),
-  feedLoading: newsFeedLoadingSelector(state)
+  feedLoading: newsFeedLoadingSelector(state),
+  userLoading: userProfileLoadingSelector(state)
 })
 
 const mapDispatchToProps = {
