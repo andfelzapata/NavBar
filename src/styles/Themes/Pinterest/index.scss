@@ -36,7 +36,7 @@
   }
 
   .navbar-item.NavLink_Selected {
-    color: $navbar-text-active-color;
+    color: $navbar-text-active-color !important;
   }
 
   .Notifications__Count {

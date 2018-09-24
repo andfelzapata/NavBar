@@ -32,7 +32,7 @@
     &:hover {
       color: $navbar-text-active-color !important;
     }
-    color: $navbar-text-color;
+    color: $navbar-text-color !important;
   }
 
   .navbar-item.NavLink_Selected {
