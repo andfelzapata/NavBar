@@ -47,7 +47,8 @@ const mapDispatchToProps = {
 NewsFeed.propTypes = {
   feed: arrayOf(shape({})).isRequired,
   feedLoading: bool.isRequired,
-  getNewsFeed: func.isRequired
+  getNewsFeed: func.isRequired,
+  userLoading: bool.isRequired
 }
 
 export default connect(

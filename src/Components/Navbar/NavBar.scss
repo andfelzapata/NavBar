@@ -1,6 +1,11 @@
 @import "styles/variables.scss";
 
 .NavBar {
+  button {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent !important;
+  }
   padding: 0 20px;
 
   .navbar-bra {

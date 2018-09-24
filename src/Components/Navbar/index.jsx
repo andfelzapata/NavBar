@@ -7,7 +7,6 @@ import NavLinkBrand from "Components/Navbar/NavLinkBrand"
 import SearchBar from "Components/Common/SearchBar"
 import NotificationsTray from "Components/Navbar/NotificationsTray"
 import ProfileDropdown from "./ProfileDropdown"
-
 import "./NavBar.scss"
 
 class NavBar extends PureComponent {
@@ -33,7 +32,8 @@ class NavBar extends PureComponent {
       <nav className="NavBar navbar">
         <div className="navbar-brand">
           <NavLinkBrand />
-          <div
+          <button
+            type="button"
             onClick={this.toggleBurger}
             className={classNames("navbar-burger burger", {
               "is-active": isActive
@@ -42,13 +42,18 @@ class NavBar extends PureComponent {
             <span />
             <span />
             <span />
-          </div>
+          </button>
         </div>
 
         <div className={classNames("navbar-menu", { "is-active": isActive })}>
-          <div className="navbar-start">
+          <div
+            className="navbar-start"
+            onClick={() => this.closeBurger()}
+            onKeyPress={() => this.closeBurger()}
+            tabIndex={0}
+            role="button"
+          >
             <NavLink
-              onClick={() => this.closeBurger()}
               activeClassName="NavLink_Selected"
               className="navbar-item"
               to="/feed"
@@ -56,32 +61,19 @@ class NavBar extends PureComponent {
               News
             </NavLink>
             <NavLink
-              onClick={() => this.closeBurger()}
               activeClassName="NavLink_Selected"
               className="navbar-item"
               to="/people"
             >
               People
             </NavLink>
-            <NavLink
-              onClick={() => this.closeBurger()}
-              className="navbar-item"
-              to="/food"
-            >
+            <NavLink className="navbar-item" to="/food">
               Food
             </NavLink>
-            <NavLink
-              onClick={() => this.closeBurger()}
-              className="navbar-item"
-              to="/admin"
-            >
+            <NavLink className="navbar-item" to="/admin">
               Admin
             </NavLink>
-            <NavLink
-              onClick={() => this.closeBurger()}
-              className="navbar-item"
-              to="/more"
-            >
+            <NavLink className="navbar-item" to="/more">
               More
             </NavLink>
             <SearchBar />
