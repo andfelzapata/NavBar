@@ -1,7 +1,7 @@
 @import "styles/variables.scss";
 
 .NavBar {
-  button {
+  button.navbar-burger.burger.is-active {
     border: 0;
     box-shadow: none;
     background-color: transparent !important;
@@ -32,6 +32,18 @@
 
     &.NavLink_Selected {
       color: $color-black-text;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .NavBar {
+    .navbar-end {
+      width: 100%;
+      max-width: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

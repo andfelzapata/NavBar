@@ -27,3 +27,9 @@
     left: calc(-65%);
   }
 }
+
+@media only screen and (max-width: 769px) {
+  .ProfileDropdown.dropdown.navbar-item {
+    display: inline-block !important;
+  }
+}

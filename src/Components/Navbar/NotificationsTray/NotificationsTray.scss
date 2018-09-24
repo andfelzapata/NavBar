@@ -24,3 +24,18 @@
     bottom: 25px;
   }
 }
+
+@media only screen and (max-width: 769px) {
+  .NotificationsTray {
+    display: inline-block !important;
+    button {
+      width: 30px;
+    }
+    .Notifications__Count {
+      right: -14px;
+      bottom: 14px;
+      font-size: 0.6rem;
+      width: 20px;
+    }
+  }
+}
