@@ -1,0 +1,13 @@
+@import "styles/variables.scss";
+
+.FeedList {
+  .FeedList__Header {
+    color: #afafaf;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  .content > * {
+    color: $color-gray-content-text;
+  }
+}

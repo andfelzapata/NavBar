@@ -1,0 +1,10 @@
+@import "styles/variables.scss";
+
+.FeedActions {
+  button {
+    border: 0;
+  }
+  .icon {
+    color: $color-gray-content-text;
+  }
+}

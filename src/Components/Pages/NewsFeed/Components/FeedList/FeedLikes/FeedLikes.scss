@@ -1,0 +1,12 @@
+@import "styles/variables.scss";
+
+.FeedLikes {
+  .icon {
+    border: solid 1px $color-transparent-gray-border;
+    box-shadow: 0px 0px 1px $color-gray-border;
+  }
+  .Likes__Count span {
+    color: $color-light-gray-text;
+    margin: 0 0 0 10px;
+  }
+}
