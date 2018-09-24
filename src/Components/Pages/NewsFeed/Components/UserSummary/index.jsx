@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react"
 import { func, shape, string } from "prop-types"
-import userImage from "img/user@2x.png"
 import { connect } from "react-redux"
 import getUserProfile from "../../actions/userProfile"
 import "./UserSummary.scss"
@@ -22,7 +21,7 @@ class UserSummary extends PureComponent {
               <div className="media">
                 <div className="media-left">
                   <figure className="image is-48x48">
-                    <img src={userImage} alt="User" />
+                    <img src={user.avatar} alt="User" />
                   </figure>
                 </div>
                 <div className="media-content">
