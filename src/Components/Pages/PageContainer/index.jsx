@@ -1,11 +1,10 @@
-import React, { Component } from "react"
+import React, { PureComponent } from "react"
 import { node } from "prop-types"
 import "./PageContainer.scss"
 
-class PageContainer extends Component {
+class PageContainer extends PureComponent {
   constructor(props) {
     super(props)
-    // create a ref to store the textInput DOM element
     this.DOMnode = React.createRef()
   }
   componentDidMount() {
