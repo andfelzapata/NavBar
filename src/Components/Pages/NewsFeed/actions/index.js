@@ -1,5 +1,5 @@
-import ActionTypes from "../actionTypes"
 import request from "utils/request"
+import ActionTypes from "../actionTypes"
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))

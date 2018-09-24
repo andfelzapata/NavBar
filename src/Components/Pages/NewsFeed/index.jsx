@@ -1,8 +1,9 @@
 import React, { PureComponent } from "react"
+import { arrayOf, func, shape } from "prop-types"
 import { connect } from "react-redux"
+import PageContainer from "Pages/PageContainer"
 import getNewsFeed from "./actions"
 import { newsFeedSelector } from "./reducers"
-import PageContainer from "Pages/PageContainer"
 
 class NewsFeed extends PureComponent {
   componentDidMount() {
@@ -21,6 +22,11 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = {
   getNewsFeed
+}
+
+NewsFeed.propTypes = {
+  feed: arrayOf(shape({})).isRequired,
+  getNewsFeed: func.isRequired
 }
 
 export default connect(

@@ -1,5 +1,5 @@
-import ActionTypes from "../actionTypes"
 import { createSelector } from "reselect"
+import ActionTypes from "../actionTypes"
 
 const defaultState = {
   themeName: "Pinterest"

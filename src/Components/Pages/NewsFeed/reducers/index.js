@@ -1,5 +1,5 @@
-import ActionTypes from "../actionTypes"
 import { createSelector } from "reselect"
+import ActionTypes from "../actionTypes"
 
 const defaultState = {
   feed: [],
@@ -9,7 +9,6 @@ const defaultState = {
 
 export default function NewsFeedStore(state = defaultState, action) {
   const { type, feed, isLoading, err } = action
-  console.log({ type, feed })
   switch (type) {
     case ActionTypes.GET_NEWS_FEED_REQUEST:
       return {
