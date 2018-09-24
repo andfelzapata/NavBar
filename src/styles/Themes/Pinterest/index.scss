@@ -11,15 +11,28 @@
     background: $highlight-color;
   }
 
+  .FeedLikes {
+    .icon .fa {
+      color: $highlight-color;
+    }
+  }
+
+  .Feed_Content {
+    b {
+      color: $highlight-color;
+      font-weight: normal;
+    }
+  }
+
   nav.NavBar.navbar {
     background: $navbar-background-color;
   }
 
   .navbar-item {
     &:hover {
-      color: $navbar-text-active-color;
+      color: $navbar-text-active-color !important;
     }
-    color: $navbar-text-color;
+    color: $navbar-text-color !important;
   }
 
   .navbar-item.NavLink_Selected {

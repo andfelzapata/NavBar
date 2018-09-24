@@ -8,7 +8,20 @@
   background: $background-color;
 
   .sk-fading-circle .sk-circle:before {
-    background: $navbar-background-color;
+    background: $highlight-color;
+  }
+
+  .FeedLikes {
+    .icon .fa {
+      color: $highlight-color;
+    }
+  }
+
+  .Feed_Content {
+    b {
+      color: $highlight-color;
+      font-weight: normal;
+    }
   }
 
   nav.NavBar.navbar {
@@ -17,13 +30,13 @@
 
   .navbar-item {
     &:hover {
-      color: $navbar-text-active-color;
+      color: $navbar-text-active-color !important;
     }
     color: $navbar-text-color;
   }
 
   .navbar-item.NavLink_Selected {
-    color: $navbar-text-active-color;
+    color: $navbar-text-active-color !important;
   }
 
   .Notifications__Count {
