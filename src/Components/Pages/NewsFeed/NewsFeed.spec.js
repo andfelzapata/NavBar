@@ -4,7 +4,7 @@ import configureMockStore from "redux-mock-store"
 import { Provider } from "react-redux"
 import ReduxThunk from "redux-thunk"
 import NewsFeed from "./index"
-import getNewsFeed from "./actions/index.js"
+import getNewsFeed from "./actions/newsFeed/index.js"
 
 const mockStore = configureMockStore([ReduxThunk])
 const store = mockStore({

@@ -1,0 +1,29 @@
+@import "styles/variables.scss";
+
+.UserSummary {
+  margin: 15px 0 0 0;
+
+  .card {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .title {
+    font-weight: normal;
+  }
+
+  .subtitle {
+    color: $color-gray-content-text;
+  }
+
+  .content {
+    color: $color-black-text;
+  }
+
+  hr {
+    margin: 0;
+    height: 1px;
+    background: $color-light-gray-text;
+  }
+}

@@ -3,9 +3,10 @@ import { arrayOf, func, shape, bool } from "prop-types"
 import { connect } from "react-redux"
 import Spinner from "Components/Common/Spinner"
 import PageContainer from "Pages/PageContainer"
-import getNewsFeed from "./actions"
-import { newsFeedSelector, newsFeedLoadingSelector } from "./reducers"
+import getNewsFeed from "./actions/newsFeed"
+import { newsFeedSelector, newsFeedLoadingSelector } from "./reducers/newsFeed"
 import FeedList from "./Components/FeedList"
+import UserSummary from "./Components/UserSummary"
 
 class NewsFeed extends PureComponent {
   componentDidMount() {
@@ -18,7 +19,11 @@ class NewsFeed extends PureComponent {
       <PageContainer>
         <div className="columns">
           <div className="column" />
-          <div className="column is-3" />
+
+          <div className="column is-3">
+            <UserSummary />
+          </div>
+
           <FeedList feed={feed} />
           <div className="column" />
         </div>

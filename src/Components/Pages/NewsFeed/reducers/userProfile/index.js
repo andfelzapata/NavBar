@@ -1,27 +1,27 @@
 import { createSelector } from "reselect"
-import ActionTypes from "../../actionTypes/newsFeed/index"
+import ActionTypes from "../../actionTypes/userProfile/index"
 
 const defaultState = {
-  feed: [],
+  profile: [],
   isLoading: false,
   err: null
 }
 
-export default function NewsFeedStore(state = defaultState, action) {
-  const { type, feed, isLoading, err } = action
+export default function UserProfileStore(state = defaultState, action) {
+  const { type, profile, isLoading, err } = action
   switch (type) {
-    case ActionTypes.GET_NEWS_FEED_REQUEST:
+    case ActionTypes.GET_USER_PROFILE_REQUEST:
       return {
         ...state,
         isLoading
       }
-    case ActionTypes.GET_NEWS_FEED_SUCCESS:
+    case ActionTypes.GET_USER_PROFILE_SUCCESS:
       return {
         ...state,
-        feed,
+        profile,
         isLoading
       }
-    case ActionTypes.GET_NEWS_FEED_FAILURE:
+    case ActionTypes.GET_USER_PROFILE_FAILURE:
       return {
         ...state,
         isLoading,
@@ -32,13 +32,16 @@ export default function NewsFeedStore(state = defaultState, action) {
   }
 }
 
-const getNewsFeed = state => state.NewsFeed.feed
+const getUserProfile = state => state.UserProfile.profile
 
-const getNewsFeedLoading = state => state.NewsFeed.isLoading
+const getUserProfileLoading = state => state.UserProfile.isLoading
 
-export const newsFeedSelector = createSelector([getNewsFeed], feed => feed)
+export const userProfileSelector = createSelector(
+  [getUserProfile],
+  profile => profile
+)
 
-export const newsFeedLoadingSelector = createSelector(
-  [getNewsFeedLoading],
-  feedLoading => feedLoading
+export const userProfileLoadingSelector = createSelector(
+  [getUserProfileLoading],
+  userProfileLoading => userProfileLoading
 )

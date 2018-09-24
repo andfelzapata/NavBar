@@ -1,5 +1,5 @@
 import { createSelector } from "reselect"
-import ActionTypes from "../actionTypes"
+import ActionTypes from "../../actionTypes/newsFeed/index"
 
 const defaultState = {
   feed: [],
