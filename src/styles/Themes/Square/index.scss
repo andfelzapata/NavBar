@@ -43,3 +43,13 @@
     background: $highlight-color;
   }
 }
+
+@media only screen and (max-width: 769px) {
+  .Square__Theme {
+    .navbar-menu.is-active {
+      .navbar-item {
+        color: #2b333a !important;
+      }
+    }
+  }
+}
