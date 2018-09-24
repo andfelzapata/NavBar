@@ -1,3 +1,6 @@
-const reducer = () => {}
+import { combineReducers } from "redux"
+import Theme from "Components/Common/ThemeSwitcher/reducers"
 
-export default reducer
+export default combineReducers({
+  Theme
+})
