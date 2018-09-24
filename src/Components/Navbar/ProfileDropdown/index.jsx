@@ -15,8 +15,12 @@ class ProfileDropdown extends PureComponent {
     this.setState({ isActive: !isActive })
   }
 
-  handleClickOutside() {
+  closeDropdown() {
     this.setState({ isActive: false })
+  }
+
+  handleClickOutside() {
+    this.closeDropdown()
   }
 
   render() {
@@ -44,10 +48,18 @@ class ProfileDropdown extends PureComponent {
         </div>
         <div className="dropdown-menu" id="ProfileDropdown" role="menu">
           <div className="dropdown-content">
-            <NavLink to="/settings" className="dropdown-item">
+            <NavLink
+              onClick={() => this.closeDropdown()}
+              to="/settings"
+              className="dropdown-item"
+            >
               Settings
             </NavLink>
-            <NavLink to="/sign-out" className="dropdown-item">
+            <NavLink
+              onClick={() => this.closeDropdown()}
+              to="/sign-out"
+              className="dropdown-item"
+            >
               Sign Out
             </NavLink>
           </div>
