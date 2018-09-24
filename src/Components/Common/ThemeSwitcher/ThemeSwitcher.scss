@@ -1,0 +1,15 @@
+@import "styles/variables.scss";
+
+.ThemeSwitcher {
+  &.Pinterest {
+    .switch[type="checkbox"] + label::before {
+      background: $color-pinterest;
+    }
+  }
+
+  &.Square {
+    .switch[type="checkbox"] + label::before {
+      background: $color-square;
+    }
+  }
+}

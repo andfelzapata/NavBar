@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ThemeSwitcher /> Should render self 1`] = `
+<div
+  class="ThemeSwitcher field Pinterest"
+>
+  <input
+    checked=""
+    class="switch is-rounded"
+    id="themeSwitcherButton"
+    type="checkbox"
+  />
+  <label
+    for="themeSwitcherButton"
+  />
+</div>
+`;
