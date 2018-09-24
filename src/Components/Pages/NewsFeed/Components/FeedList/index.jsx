@@ -28,7 +28,7 @@ const FeedList = ({ feed }) => (
                 dangerouslySetInnerHTML={createContentMarkup(f.content)}
               />
               <hr />
-              {f.media ? <img src={f.media} /> : null}
+              {f.media ? <img src={f.media} alt="Feed" /> : null}
               <FeedLikes feed={f} />
             </div>
           </div>
