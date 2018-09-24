@@ -9,25 +9,30 @@
     "prettier": "prettier --write 'src/**/*'",
     "lint": "eslint . --ext .js,.jsx",
     "lint:fix": "eslint . --ext .js,.jsx --fix",
-    "dev": "webpack-dev-server --mode=development --open --hot",
+    "dev": "NODE_ENV=development webpack-dev-server --mode=development --open --hot",
     "build": "NODE_ENV=production webpack --mode=production"
   },
   "dependencies": {
+    "autoprefixer": "^9.1.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "classnames": "^2.2.6",
+    "keymirror": "^0.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-click-outside": "^3.0.1",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^3.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "@babel/generator": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
-    "autoprefixer": "^9.1.5",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.6.0",
@@ -35,7 +40,6 @@
     "babel-plugin-transform-object-rest-spread": "7.0.0-beta.3",
     "bulma": "^0.7.1",
     "bulma-extensions": "^3.0.0",
-    "classnames": "^2.2.6",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
@@ -57,8 +61,7 @@
     "postcss-loader": "^3.0.0",
     "prettier": "^1.14.2",
     "react-testing-library": "^5.1.0",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
+    "redux-mock-store": "^1.5.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "uglifyjs-webpack-plugin": "^2.0.1",
@@ -74,7 +77,10 @@
     "moduleNameMapper": {
       "^mockData(.*)$": "<rootDir>/src/mockData$1",
       "^Components(.*)$": "<rootDir>/src/Components$1",
+      "^Pages(.*)$": "<rootDir>/src/Components/Pages$1",
       "^utils(.*)$": "<rootDir>/src/utils$1",
+      "^selectors(.*)$": "<rootDir>/src/selectors$1",
+      "^reducers(.*)$": "<rootDir>/src/reducers$1",
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
       "\\.(css|scss)$": "<rootDir>/src/__mocks__/styleMock.js"
     }
