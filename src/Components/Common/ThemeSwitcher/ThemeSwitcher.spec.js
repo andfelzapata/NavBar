@@ -16,7 +16,7 @@ describe("<ThemeSwitcher />", () => {
     expect(container.firstChild).toMatchSnapshot()
   })
 
-  it("Should toggle current theme", () => {
+  it("Should toggle themes", () => {
     let props = {
       ...createProps(),
       theme: "Pinterest"
