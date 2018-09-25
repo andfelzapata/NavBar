@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "event": "Block Chain 101: Launch and Learn",
+    "date": "2018-09-27 12:30:26",
+    "location": "San Francisco",
+    "updated_at": "2018-03-23 14:29:48",
+    "created_at": "2018-04-24 03:23:52"
+  },
+  {
+    "id": 2,
+    "event": "Speaker Series: Deray McKesson",
+    "date": "2018-09-24 13:46:51",
+    "location": "San Francisco",
+    "updated_at": "2018-09-14 03:56:10",
+    "created_at": "2018-08-31 20:23:59"
+  },
+  {
+    "id": 3,
+    "event": "City Square: Aaron Zamost Q&A",
+    "date": "2018-11-01 12:30:28",
+    "location": "San Francisco",
+    "updated_at": "2018-01-05 12:15:23",
+    "created_at": "2018-01-27 09:24:34"
+  },
+  {
+    "id": 4,
+    "event": "Open Mobile Summit",
+    "date": "2018-11-27 01:01:07",
+    "location": "San Francisco",
+    "updated_at": "2018-07-08 12:16:36",
+    "created_at": "2018-08-30 14:11:31"
+  },
+  {
+    "id": 5,
+    "event": "Lean Startup Conference",
+    "date": "2018-10-15  22:36:25",
+    "location": "San Francisco",
+    "updated_at": "2018-05-18 06:26:46",
+    "created_at": "2018-03-09 19:30:16"
+  }
+]
