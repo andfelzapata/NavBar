@@ -38,6 +38,10 @@
 
 @media only screen and (max-width: 769px) {
   .NavBar {
+    button.navbar-burger.burger {
+      background-color: transparent;
+      border: 0;
+    }
     .navbar-end {
       width: 100%;
       max-width: inherit;
