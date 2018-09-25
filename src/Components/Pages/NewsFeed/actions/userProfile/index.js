@@ -1,5 +1,5 @@
 import request from "utils/request/index"
-import ActionTypes from "../../actionTypes/userProfile/index"
+import ActionTypes from "../../actionTypes/userProfile"
 import sleep from "../helpers"
 
 const getUserProfileRequest = () => {

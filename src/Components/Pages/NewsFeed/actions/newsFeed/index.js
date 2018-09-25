@@ -1,5 +1,5 @@
 import request from "utils/request/index"
-import ActionTypes from "../../actionTypes/newsFeed/index"
+import ActionTypes from "../../actionTypes/newsFeed"
 import sleep from "../helpers"
 
 const getNewsFeedRequest = () => {
