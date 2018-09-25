@@ -47,26 +47,20 @@ class ProfileDropdown extends PureComponent {
           </button>
         </div>
         <div className="dropdown-menu" id="ProfileDropdown" role="menu">
-          <div className="dropdown-content">
-            <NavLink
-              onClick={() => this.closeDropdown()}
-              to="/profile/1"
-              className="dropdown-item"
-            >
+          <div
+            className="dropdown-content"
+            role="button"
+            onClick={() => this.closeDropdown()}
+            onKeyPress={() => this.closeBurger()}
+            tabIndex={0}
+          >
+            <NavLink to="/profile/1" className="dropdown-item">
               Profile
             </NavLink>
-            <NavLink
-              onClick={() => this.closeDropdown()}
-              to="/settings"
-              className="dropdown-item"
-            >
+            <NavLink to="/settings" className="dropdown-item">
               Settings
             </NavLink>
-            <NavLink
-              onClick={() => this.closeDropdown()}
-              to="/sign-out"
-              className="dropdown-item"
-            >
+            <NavLink to="/sign-out" className="dropdown-item">
               Sign Out
             </NavLink>
           </div>
