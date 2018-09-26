@@ -15,6 +15,49 @@ exports[`<NewsFeed /> Should render self 1`] = `
       class="column is-3"
     >
       <div
+        class="UserSummary"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="card-content"
+          >
+            <div
+              class="media"
+            >
+              <div
+                class="media-left"
+              >
+                <figure
+                  class="image is-48x48"
+                >
+                  <img
+                    alt="User"
+                  />
+                </figure>
+              </div>
+              <div
+                class="media-content"
+              >
+                <p
+                  class="title is-size-4"
+                >
+                   
+                </p>
+                <p
+                  class="subtitle is-size-6"
+                />
+              </div>
+            </div>
+            <div
+              class="content is-size-6"
+            />
+            <hr />
+          </div>
+        </div>
+      </div>
+      <div
         class="UpcomingEvents"
       >
         <span

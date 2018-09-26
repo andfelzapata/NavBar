@@ -3,17 +3,11 @@ import { render, cleanup } from "react-testing-library"
 import { Provider } from "react-redux"
 import ReduxThunk from "redux-thunk"
 import configureMockStore from "redux-mock-store"
+import mockStore from "__mocks__/mockStore.js"
 import UserSummary from "./index"
 
-const mockStore = configureMockStore([ReduxThunk])
-const store = mockStore({
-  Theme: { themeName: "Pinterest" },
-  NewsFeed: { feed: [], isLoading: false },
-  UserProfile: {
-    profile: { bio: "", interests: "", first_name: "", last_name: "" },
-    isLoading: false
-  }
-})
+const configureStore = configureMockStore([ReduxThunk])
+const store = configureStore(mockStore)
 
 describe("<UserSummary />", () => {
   afterEach(cleanup)

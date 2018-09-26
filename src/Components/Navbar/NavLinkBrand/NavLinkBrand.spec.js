@@ -1,7 +1,7 @@
 import React from "react"
 import { render, cleanup } from "react-testing-library"
-import configureMockStore from "redux-mock-store"
 import { Provider } from "react-redux"
+import configureMockStore from "redux-mock-store"
 import { BrowserRouter as Router } from "react-router-dom"
 import NavLinBrand from "./index"
 
