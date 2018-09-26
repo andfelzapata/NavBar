@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react"
-import { arrayOf, shape, number, string } from "prop-types"
+import { func, arrayOf, shape, number, string } from "prop-types"
 import { connect } from "react-redux"
 import { doesArrayHaveData } from "utils/hasData"
 import { notificationsSelector } from "./reducers"
@@ -8,7 +8,8 @@ import "./NotificationsTray.scss"
 
 export class NotificationsTray extends PureComponent {
   componentDidMount() {
-    this.props.getNotifications()
+    const { getNotifications } = this.props
+    getNotifications()
   }
   render() {
     const { notifications } = this.props
@@ -40,6 +41,7 @@ const mapDispatchToProps = {
 }
 
 NotificationsTray.propTypes = {
+  getNotifications: func.isRequired,
   notifications: arrayOf(
     shape({
       id: number.isRequired,

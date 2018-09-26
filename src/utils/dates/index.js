@@ -8,4 +8,4 @@ const order = (start, end) => field => order => {
   }[order]
 }
 
-export { order }
+export default order

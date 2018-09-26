@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react"
-import { arrayOf, shape, string, number } from "prop-types"
+import { func, arrayOf, shape, string, number } from "prop-types"
 import { connect } from "react-redux"
 import { doesArrayHaveData } from "utils/hasData"
 import { eventsSelector } from "../../reducers/upcomingEvents"
@@ -25,6 +25,7 @@ class UpcomingEvents extends PureComponent {
 }
 
 UpcomingEvents.propTypes = {
+  getUpcomingEvents: func.isRequired,
   events: arrayOf(
     shape({
       id: number,

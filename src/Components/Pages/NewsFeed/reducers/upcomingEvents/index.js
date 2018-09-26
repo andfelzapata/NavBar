@@ -1,5 +1,5 @@
 import { createSelector } from "reselect"
-import { order } from "utils/dates"
+import order from "utils/dates"
 import ActionTypes from "../../actionTypes/upcomingEvents"
 
 const defaultState = {

@@ -18,10 +18,10 @@ const Event = ({ event: { name, date, location } }) => {
 
 Event.propTypes = {
   event: shape({
-    name: string,
-    date: string,
-    location: string
-  })
+    name: string.isRequired,
+    date: string.isRequired,
+    location: string.isRequired
+  }).isRequired
 }
 
 export default Event
