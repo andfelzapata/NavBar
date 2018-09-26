@@ -31,7 +31,6 @@ class UserSummary extends PureComponent {
                   <p className="subtitle is-size-6">{user.interests}</p>
                 </div>
               </div>
-
               <div className="content is-size-6">{user.bio}</div>
               <hr />
             </div>
