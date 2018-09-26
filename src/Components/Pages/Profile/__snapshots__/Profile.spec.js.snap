@@ -2,7 +2,8 @@
 
 exports[`<Profile /> Should render self 1`] = `
 <div
-  class="PageContainer"
+  class="PageContainer container"
+  style="opacity: 0; visibility: hidden;"
 >
   Hello Profile
 </div>

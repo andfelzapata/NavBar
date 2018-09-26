@@ -3,5 +3,8 @@
 exports[`<PageContainer /> Should render self 1`] = `
 <div
   class="PageContainer container"
-/>
+  style="opacity: 0; visibility: hidden;"
+>
+  <div />
+</div>
 `;

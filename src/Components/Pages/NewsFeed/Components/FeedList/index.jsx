@@ -1,20 +1,18 @@
 import React from "react"
 import { arrayOf, shape, number, string } from "prop-types"
+import { doesArrayHaveData } from "utils/hasData"
 import FeedHeader from "./FeedHeader"
 import FeedIcon from "./FeedIcon"
 import FeedActions from "./FeedActions"
 import FeedLikes from "./FeedLikes"
+import FeedContent from "./FeedContent"
 import "./FeedList.scss"
-
-function createContentMarkup(content) {
-  return { __html: content }
-}
 
 const FeedList = ({ feed }) => (
   <div className="FeedList column is-7">
     <p className="FeedList__Header">LATEST</p>
     <div className="FeedList__Items">
-      {feed.length > 0 &&
+      {doesArrayHaveData(feed) &&
         feed.map(f => (
           <div className="content" key={f.id}>
             <div className="box">
@@ -23,10 +21,7 @@ const FeedList = ({ feed }) => (
                 <FeedActions />
               </div>
               <FeedHeader feed={f} />
-              <div
-                className="Feed_Content"
-                dangerouslySetInnerHTML={createContentMarkup(f.content)}
-              />
+              <FeedContent content={f.content} />
               <hr />
               {f.media ? <img src={f.media} alt="Feed" /> : null}
               <FeedLikes feed={f} />

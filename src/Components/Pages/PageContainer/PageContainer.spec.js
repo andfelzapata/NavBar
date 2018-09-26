@@ -5,7 +5,7 @@ import PageContainer from "./index"
 describe("<PageContainer />", () => {
   afterEach(cleanup)
   it("Should render self", () => {
-    const { container } = render(<PageContainer />)
+    const { container } = render(<PageContainer children={<div />} />)
     expect(container.firstChild).toBeTruthy()
     expect(container.firstChild).toMatchSnapshot()
   })

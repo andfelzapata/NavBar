@@ -1,8 +1,8 @@
 import React from "react"
 import { render, cleanup, fireEvent } from "react-testing-library"
+import "jest-dom/extend-expect"
 import { BrowserRouter as Router } from "react-router-dom"
 import ProfileDropdown from "./index"
-import "jest-dom/extend-expect"
 
 describe("<ProfileDropdown />", () => {
   afterEach(cleanup)

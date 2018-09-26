@@ -3,6 +3,7 @@
 exports[`<NewsFeed /> Should render self 1`] = `
 <div
   class="PageContainer container"
+  style="opacity: 0; visibility: hidden;"
 >
   <div
     class="columns"
@@ -16,11 +17,11 @@ exports[`<NewsFeed /> Should render self 1`] = `
     <div
       class="FeedList column is-7"
     >
-      <span
+      <p
         class="FeedList__Header"
       >
         LATEST
-      </span>
+      </p>
       <div
         class="FeedList__Items"
       />

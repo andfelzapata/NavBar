@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeedList /> Should render self 1`] = `
+<div
+  class="FeedList column is-7"
+>
+  <p
+    class="FeedList__Header"
+  >
+    LATEST
+  </p>
+  <div
+    class="FeedList__Items"
+  />
+</div>
+`;

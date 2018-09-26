@@ -4,12 +4,12 @@ import configureMockStore from "redux-mock-store"
 import { Provider } from "react-redux"
 import ReduxThunk from "redux-thunk"
 import NewsFeed from "./index"
-import getNewsFeed from "./actions/newsFeed/index.js"
 
 const mockStore = configureMockStore([ReduxThunk])
 const store = mockStore({
   Theme: { themeName: "Pinterest" },
-  NewsFeed: { feed: [] }
+  NewsFeed: { feed: [], isLoading: false },
+  UserProfile: { profile: {}, isLoading: false }
 })
 
 describe("<NewsFeed />", () => {
@@ -17,7 +17,7 @@ describe("<NewsFeed />", () => {
   it("Should render self", () => {
     const { container } = render(
       <Provider store={store}>
-        <NewsFeed getNewsFeed={() => getNewsFeed()} />
+        <NewsFeed />
       </Provider>
     )
     expect(container.firstChild).toBeTruthy()
