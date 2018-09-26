@@ -80,6 +80,7 @@
     ],
     "moduleNameMapper": {
       "^mockData(.*)$": "<rootDir>/src/mockData$1",
+      "^__mocks__(.*)$": "<rootDir>/src/__mocks__$1",
       "^Components(.*)$": "<rootDir>/src/Components$1",
       "^Pages(.*)$": "<rootDir>/src/Components/Pages$1",
       "^utils(.*)$": "<rootDir>/src/utils$1",
