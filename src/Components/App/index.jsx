@@ -25,7 +25,7 @@ export const App = ({ theme }) => (
       />
     </Switch>
     <footer>
-      <ThemeSwitcher switchTheme={() => null} />
+      <ThemeSwitcher />
     </footer>
   </div>
 )
