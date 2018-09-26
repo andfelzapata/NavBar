@@ -78,7 +78,7 @@ class NavBar extends PureComponent {
             <SearchBar />
           </div>
           <div className="navbar-end">
-            <NotificationsTray notifications={[]} />
+            <NotificationsTray />
             <ProfileDropdown />
           </div>
         </div>
