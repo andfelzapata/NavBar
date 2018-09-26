@@ -17,7 +17,6 @@ export const App = ({ theme }) => (
     <Switch>
       <Route path="/" exact component={NewsFeed} />
       <Route path="/feed" component={NewsFeed} />
-      <Route path="/people" component={People} />
       <Route
         path="/*"
         component={() => (

@@ -40,7 +40,7 @@ const getNotificationsLoading = state => state.Notifications.isLoading
 export const notificationsSelector = createSelector(
   [getNotifications],
   notifications => {
-    return notifications.sort((a, b) => order(a, b)("updated_at")("desc"))
+    return notifications.sort((a, b) => order(a, b)("updated_at")("asc"))
   }
 )
 
