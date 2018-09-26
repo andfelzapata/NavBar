@@ -9,7 +9,7 @@ import { userProfileLoadingSelector } from "./reducers/userProfile"
 import FeedList from "./Components/FeedList"
 import UserSummary from "./Components/UserSummary"
 
-class NewsFeed extends PureComponent {
+export class NewsFeed extends PureComponent {
   componentDidMount() {
     const { getNewsFeed } = this.props
     getNewsFeed()
@@ -20,11 +20,9 @@ class NewsFeed extends PureComponent {
       <PageContainer>
         <div className="columns">
           <div className="column" />
-
           <div className="column is-3">
             <UserSummary />
           </div>
-
           <FeedList feed={feed} />
           <div className="column" />
         </div>
