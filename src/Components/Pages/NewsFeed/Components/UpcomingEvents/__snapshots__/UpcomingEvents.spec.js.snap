@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UpcomingEvents /> Should render self 1`] = `
+<div
+  class="UpcomingEvents"
+>
+  <span
+    class="is-size-7"
+  >
+    UPCOMING EVENTS
+  </span>
+</div>
+`;

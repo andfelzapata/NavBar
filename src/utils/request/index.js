@@ -5,7 +5,7 @@ const checkStatus = response => {
   throw new Error(response.status)
 }
 
-function request(url) {
+export const request = url => {
   const requestUrl = `api/${url}`
 
   return fetch(requestUrl)
@@ -16,4 +16,6 @@ function request(url) {
     })
 }
 
-export default request
+export const sleep = (ms = 500) => {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
