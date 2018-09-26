@@ -1,20 +1,20 @@
 import React, { PureComponent } from "react"
 import { func, shape, string } from "prop-types"
 import { connect } from "react-redux"
+import { doesObjectHaveData } from "utils/hasData"
 import getUserProfile from "../../actions/userProfile"
 import "./UserSummary.scss"
 
-class UserSummary extends PureComponent {
+export class UserSummary extends PureComponent {
   componentDidMount() {
     const { getUserProfile } = this.props
     getUserProfile()
   }
   render() {
     const { user } = this.props
-    const dataPresent = Object.keys(user).length > 0
 
     return (
-      dataPresent && (
+      doesObjectHaveData(user) && (
         <div className="UserSummary">
           <div className="card">
             <div className="card-content">
