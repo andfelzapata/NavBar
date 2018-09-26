@@ -16,7 +16,13 @@ exports[`<NewsFeed /> Should render self 1`] = `
     >
       <div
         class="UpcomingEvents"
-      />
+      >
+        <span
+          class="is-size-7"
+        >
+          UPCOMING EVENTS
+        </span>
+      </div>
     </div>
     <div
       class="FeedList column is-7"

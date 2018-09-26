@@ -8,7 +8,7 @@ import { newsFeedSelector, newsFeedLoadingSelector } from "./reducers/newsFeed"
 import { userProfileLoadingSelector } from "./reducers/userProfile"
 import FeedList from "./Components/FeedList"
 import UserSummary from "./Components/UserSummary"
-import UpcomingEvents from "./Components/UpcommingEvents"
+import UpcomingEvents from "./Components/UpcomingEvents"
 
 class NewsFeed extends PureComponent {
   componentDidMount() {

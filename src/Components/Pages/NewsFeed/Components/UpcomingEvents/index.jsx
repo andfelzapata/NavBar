@@ -5,7 +5,7 @@ import { eventsSelector } from "../../reducers/upcomingEvents"
 import getUpcomingEvents from "../../actions/upcommingEvents"
 import { doesArrayHaveData } from "utils/hasData"
 import Event from "./Event"
-import "./UpcommingEvents.scss"
+import "./UpcomingEvents.scss"
 
 class UpcomingEvents extends PureComponent {
   componentDidMount() {

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeedActions /> Should render self 1`] = `
+<div
+  class="FeedActions evel-right"
+>
+  <div
+    class="level-item"
+  >
+    <button
+      class="button"
+      type="button"
+    >
+      <span
+        class="icon"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-ellipsis-h"
+        />
+      </span>
+    </button>
+  </div>
+</div>
+`;
