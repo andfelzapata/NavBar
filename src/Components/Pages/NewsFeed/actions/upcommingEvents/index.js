@@ -9,11 +9,11 @@ const getUpcomingEventsRequest = () => {
   }
 }
 
-const getUpcomingEventsSuccess = profile => {
+const getUpcomingEventsSuccess = events => {
   return {
     type: ActionTypes.GET_UPCOMING_EVENTS_SUCCESS,
     isLoading: false,
-    profile
+    events
   }
 }
 

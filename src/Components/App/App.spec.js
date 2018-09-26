@@ -10,7 +10,8 @@ const mockStore = configureMockStore([ReduxThunk])
 const store = mockStore({
   Theme: { themeName: "Pinterest" },
   NewsFeed: { feed: [], isLoading: false },
-  UserProfile: { profile: {}, isLoading: false }
+  UserProfile: { profile: {}, isLoading: false },
+  UpcomingEvents: { events: [], isLoading: false }
 })
 
 describe("<App />", () => {

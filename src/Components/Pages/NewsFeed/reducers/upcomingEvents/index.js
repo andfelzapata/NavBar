@@ -1,4 +1,6 @@
 import ActionTypes from "../../actionTypes/upcomingEvents"
+import { createSelector } from "reselect"
+import { order } from "utils/dates"
 
 const defaultState = {
   events: [],
@@ -30,3 +32,16 @@ export default function UpcomingEventsStore(state = defaultState, action) {
       return state
   }
 }
+
+const getEvents = state => state.UpcomingEvents.events
+
+const getEventsLoading = state => state.UpcomingEvents.isLoading
+
+export const eventsSelector = createSelector([getEvents], feed => {
+  return feed.sort((a, b) => order(a, b)("date")("desc"))
+})
+
+export const eventsLoadingSelector = createSelector(
+  [getEventsLoading],
+  eventsLoading => eventsLoading
+)

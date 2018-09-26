@@ -184,7 +184,11 @@ exports[`<App /> Should render self 1`] = `
       />
       <div
         class="column is-3"
-      />
+      >
+        <div
+          class="UpcomingEvents"
+        />
+      </div>
       <div
         class="FeedList column is-7"
       >

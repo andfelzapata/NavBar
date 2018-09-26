@@ -8,8 +8,9 @@ import { newsFeedSelector, newsFeedLoadingSelector } from "./reducers/newsFeed"
 import { userProfileLoadingSelector } from "./reducers/userProfile"
 import FeedList from "./Components/FeedList"
 import UserSummary from "./Components/UserSummary"
+import UpcomingEvents from "./Components/UpcommingEvents"
 
-export class NewsFeed extends PureComponent {
+class NewsFeed extends PureComponent {
   componentDidMount() {
     const { getNewsFeed } = this.props
     getNewsFeed()
@@ -22,6 +23,7 @@ export class NewsFeed extends PureComponent {
           <div className="column" />
           <div className="column is-3">
             <UserSummary />
+            <UpcomingEvents />
           </div>
           <FeedList feed={feed} />
           <div className="column" />

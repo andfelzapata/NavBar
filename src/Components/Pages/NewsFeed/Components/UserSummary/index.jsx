@@ -5,7 +5,7 @@ import { doesObjectHaveData } from "utils/hasData"
 import getUserProfile from "../../actions/userProfile"
 import "./UserSummary.scss"
 
-export class UserSummary extends PureComponent {
+class UserSummary extends PureComponent {
   componentDidMount() {
     const { getUserProfile } = this.props
     getUserProfile()
