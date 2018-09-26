@@ -1,6 +1,6 @@
 import React from "react"
 import { shape, string } from "prop-types"
-import { isSameWeek, format } from "date-fns"
+import friendlyEventDate from "./helpers"
 import "./Event.scss"
 
 const Event = ({ event: { name, date, location } }) => {
@@ -8,7 +8,7 @@ const Event = ({ event: { name, date, location } }) => {
     <div className="Event">
       <p className="Event__Name title is-size-6">{name}</p>
       <p className="subtitle is-size-7">
-        <span className="Event__Date">{date}</span>
+        <span className="Event__Date">{friendlyEventDate(date)}</span>
         {", "}
         <span className="Event__Location">{location}</span>
       </p>
