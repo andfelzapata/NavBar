@@ -18,10 +18,13 @@ export const App = ({ theme }) => (
       <Route path="/" exact component={NewsFeed} />
       <Route path="/feed" component={NewsFeed} />
       <Route path="/people" component={People} />
-      <Route path="/profile/:user" component={Profile} />
       <Route
         path="/*"
-        component={() => <PageContainer>Not Yet Implemented</PageContainer>}
+        component={() => (
+          <PageContainer>
+            <p className="NotImplemented is-size-5">Not Yet Implemented</p>
+          </PageContainer>
+        )}
       />
     </Switch>
     <footer>
