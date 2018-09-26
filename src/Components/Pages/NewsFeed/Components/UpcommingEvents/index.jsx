@@ -1,9 +1,11 @@
 import React, { PureComponent } from "react"
-import { arrayOf, shape, string } from "prop-types"
+import { arrayOf, shape, string, number } from "prop-types"
 import { connect } from "react-redux"
 import { eventsSelector } from "../../reducers/upcomingEvents"
 import getUpcomingEvents from "../../actions/upcommingEvents"
 import { doesArrayHaveData } from "utils/hasData"
+import Event from "./Event"
+import "./UpcommingEvents.scss"
 
 class UpcomingEvents extends PureComponent {
   componentDidMount() {
@@ -14,14 +16,24 @@ class UpcomingEvents extends PureComponent {
     const { events } = this.props
     return (
       <div className="UpcomingEvents">
+        <span className="is-size-7">UPCOMING EVENTS</span>
         {doesArrayHaveData(events) &&
-          events.map(e => <div key={e.id}>{e.event}</div>)}
+          events.map(event => <Event key={event.id} event={event} />)}
       </div>
     )
   }
 }
 
-UpcomingEvents.propTypes = {}
+UpcomingEvents.propTypes = {
+  events: arrayOf(
+    shape({
+      id: number,
+      name: string,
+      date: string,
+      location: string
+    })
+  ).isRequired
+}
 
 const mapStateToProps = state => ({
   events: eventsSelector(state)
