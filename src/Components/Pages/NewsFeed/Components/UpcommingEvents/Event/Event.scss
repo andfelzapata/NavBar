@@ -1,0 +1,13 @@
+@import "styles/variables.scss";
+
+.Event {
+  margin: 0 0 10px 0;
+  .title {
+    font-weight: normal;
+    color: $color-black-text;
+  }
+
+  .subtitle {
+    color: $color-gray-content-text;
+  }
+}

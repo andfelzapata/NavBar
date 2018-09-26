@@ -1,0 +1,11 @@
+@import "styles/variables.scss";
+
+.UpcomingEvents {
+  padding: 1.5rem;
+
+  span.is-size-7 {
+    display: block;
+    color: $color-light-gray-text;
+    margin: 0 0 5px 0;
+  }
+}
