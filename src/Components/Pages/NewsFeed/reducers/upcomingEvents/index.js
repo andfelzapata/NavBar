@@ -38,7 +38,7 @@ const getEvents = state => state.UpcomingEvents.events
 const getEventsLoading = state => state.UpcomingEvents.isLoading
 
 export const eventsSelector = createSelector([getEvents], feed => {
-  return feed.sort((a, b) => order(a, b)("date")("desc"))
+  return feed.sort((a, b) => order(a, b)("date")("asc"))
 })
 
 export const eventsLoadingSelector = createSelector(
