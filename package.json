@@ -10,7 +10,8 @@
     "lint": "eslint . --ext .js,.jsx",
     "lint:fix": "eslint . --ext .js,.jsx --fix",
     "dev": "NODE_ENV=development webpack-dev-server --mode=development --open --hot",
-    "build": "NODE_ENV=production webpack --mode=production"
+    "build": "NODE_ENV=production webpack --mode=production",
+    "deploy": "yarn build && cd client/ && now --local-config=../now.json && cd .."
   },
   "dependencies": {
     "autoprefixer": "^9.1.5",
