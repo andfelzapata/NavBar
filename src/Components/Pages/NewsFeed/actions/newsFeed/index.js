@@ -1,5 +1,5 @@
-import ActionTypes from "../../actionTypes/newsFeed"
 import { request, sleep } from "utils/request"
+import ActionTypes from "../../actionTypes/newsFeed"
 
 const getNewsFeedRequest = () => {
   return {

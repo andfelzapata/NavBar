@@ -1,5 +1,5 @@
-import ActionTypes from "../../actionTypes/userProfile"
 import { request, sleep } from "utils/request"
+import ActionTypes from "../../actionTypes/userProfile"
 
 const getUserProfileRequest = () => {
   return {

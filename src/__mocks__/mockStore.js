@@ -5,5 +5,6 @@ export default {
     profile: { bio: "", interests: "", first_name: "", last_name: "" },
     isLoading: false
   },
-  UpcomingEvents: { events: [], isLoading: false }
+  UpcomingEvents: { events: [], isLoading: false },
+  Notifications: { notifications: [], isLoading: false }
 }

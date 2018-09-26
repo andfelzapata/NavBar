@@ -14,7 +14,7 @@ exports[`<NotificationsTray /> Should render self 1`] = `
     <span
       class="Notifications__Count"
     >
-      7
+      2
       +
     </span>
   </button>

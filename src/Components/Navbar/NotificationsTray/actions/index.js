@@ -1,39 +1,38 @@
-import request from "utils/request/index"
+import { request, sleep } from "utils/request"
 import ActionTypes from "../actionTypes"
-import sleep from "../helpers"
 
-const getNewsFeedRequest = () => {
+const getNotificationsRequest = () => {
   return {
-    type: ActionTypes.GET_NEWS_FEED_REQUEST,
+    type: ActionTypes.GET_NOTIFICATIONS_REQUEST,
     isLoading: true
   }
 }
 
-const getNewsFeedSuccess = feed => {
+const getNotificationsSuccess = notifications => {
   return {
-    type: ActionTypes.GET_NEWS_FEED_SUCCESS,
+    type: ActionTypes.GET_NOTIFICATIONS_SUCCESS,
     isLoading: false,
-    feed
+    notifications
   }
 }
 
-const getNewsFeedFailure = err => {
+const getNotificationsFailure = err => {
   return {
-    type: ActionTypes.GET_NEWS_FEED_FAILURE,
+    type: ActionTypes.GET_NOTIFICATIONS_FAILURE,
     isLoading: false,
     err
   }
 }
 
-export default function getNewsFeed() {
+export default function getNotifications() {
   return async dispatch => {
-    dispatch(getNewsFeedRequest())
+    dispatch(getNotificationsRequest())
     try {
       await sleep(500)
-      const feed = await request("feed/index.json")
-      dispatch(getNewsFeedSuccess(feed))
+      const notifications = await request("notifications/index.json")
+      dispatch(getNotificationsSuccess(notifications))
     } catch (err) {
-      dispatch(getNewsFeedFailure(err))
+      dispatch(getNotificationsFailure(err))
     }
   }
 }

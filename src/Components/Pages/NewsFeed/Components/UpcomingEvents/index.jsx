@@ -1,9 +1,9 @@
 import React, { PureComponent } from "react"
 import { arrayOf, shape, string, number } from "prop-types"
 import { connect } from "react-redux"
+import { doesArrayHaveData } from "utils/hasData"
 import { eventsSelector } from "../../reducers/upcomingEvents"
 import getUpcomingEvents from "../../actions/upcommingEvents"
-import { doesArrayHaveData } from "utils/hasData"
 import Event from "./Event"
 import "./UpcomingEvents.scss"
 

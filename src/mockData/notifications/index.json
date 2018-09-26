@@ -1,35 +1,49 @@
 [
   {
     "id": 1,
-    "content": "Suspendisse potenti. In eleifend quam a odio.",
+    "notification": "Suspendisse potenti. In eleifend quam a odio.",
     "created_at": "2018-04-05 01:13:44",
     "type": "feedback_request",
     "read": false
   },
   {
     "id": 2,
-    "content": "Proin at turpis a pede.",
+    "notification": "Proin at turpis a pede.",
     "created_at": "2018-07-16 14:18:19",
     "type": "feedback_received",
     "read": false
   },
   {
     "id": 3,
-    "content": "Cum sociis natoque penatibus et.",
+    "notification": "Cum sociis natoque penatibus et.",
     "created_at": "2018-02-19 12:18:28",
     "type": "feed_activity",
     "read": true
   },
   {
     "id": 4,
-    "content": "Mi, in porttitor pede justo eu massa.",
+    "notification": "Mi, in porttitor pede justo eu massa.",
     "created_at": "2018-01-23 10:21:28",
     "type": "feed_activity",
     "read": false
   },
   {
     "id": 5,
-    "content": "Nulla suscipit ligula in lacus.",
+    "notification": "Nulla suscipit ligula in lacus.",
+    "created_at": "2018-01-08 00:43:33",
+    "type": "feed_activity",
+    "read": true
+  },
+  {
+    "id": 6,
+    "notification": "Ut aliquam sollicitudin leo.",
+    "created_at": "2018-01-08 00:43:33",
+    "type": "feed_activity",
+    "read": true
+  },
+  {
+    "id": 5,
+    "notification": "Donec quis dui at dolor tempor interdum.",
     "created_at": "2018-01-08 00:43:33",
     "type": "feed_activity",
     "read": true

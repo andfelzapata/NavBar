@@ -2,7 +2,6 @@ import React, { PureComponent } from "react"
 import { NavLink, withRouter } from "react-router-dom"
 import classNames from "classnames"
 import enhanceWithClickOutside from "react-click-outside"
-import notifications from "mockData/notifications/index"
 import NavLinkBrand from "Components/Navbar/NavLinkBrand"
 import SearchBar from "Components/Common/SearchBar"
 import NotificationsTray from "Components/Navbar/NotificationsTray"
@@ -79,7 +78,7 @@ class NavBar extends PureComponent {
             <SearchBar />
           </div>
           <div className="navbar-end">
-            <NotificationsTray notifications={notifications} />
+            <NotificationsTray notifications={[]} />
             <ProfileDropdown />
           </div>
         </div>

@@ -1,13 +1,17 @@
 import React from "react"
 import { render, cleanup, fireEvent } from "react-testing-library"
-import configureMockStore from "redux-mock-store"
 import { Provider } from "react-redux"
+import configureMockStore from "redux-mock-store"
+import ReduxThunk from "redux-thunk"
 import { BrowserRouter as Router } from "react-router-dom"
 import NavBar from "./index"
 import "jest-dom/extend-expect"
 
-const mockStore = configureMockStore()
-const store = mockStore({ Theme: { themeName: "Pinterest" } })
+const mockStore = configureMockStore([ReduxThunk])
+const store = mockStore({
+  Theme: { themeName: "Pinterest" },
+  Notifications: { notifications: [], isLoading: false }
+})
 
 describe("<NavBar />", () => {
   afterEach(cleanup)

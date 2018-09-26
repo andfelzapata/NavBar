@@ -99,12 +99,6 @@ exports[`<NavBar /> Should render self 1`] = `
           <i
             class="fa fa-bell"
           />
-          <span
-            class="Notifications__Count"
-          >
-            7
-            +
-          </span>
         </button>
       </div>
       <div

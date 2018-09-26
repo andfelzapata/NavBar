@@ -1,5 +1,5 @@
-import ActionTypes from "../../actionTypes/upcomingEvents"
 import { request, sleep } from "utils/request"
+import ActionTypes from "../../actionTypes/upcomingEvents"
 
 const getUpcomingEventsRequest = () => {
   return {
