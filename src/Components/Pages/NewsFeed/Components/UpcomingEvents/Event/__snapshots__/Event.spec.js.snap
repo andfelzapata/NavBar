@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Event /> Should render self 1`] = `
+<div
+  class="Event"
+>
+  <p
+    class="Event__Name title is-size-6"
+  />
+  <p
+    class="subtitle is-size-7"
+  >
+    <span
+      class="Event__Date"
+    >
+      Invalid Date
+    </span>
+    , 
+    <span
+      class="Event__Location"
+    />
+  </p>
+</div>
+`;

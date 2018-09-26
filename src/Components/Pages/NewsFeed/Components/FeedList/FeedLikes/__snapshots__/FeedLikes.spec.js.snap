@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeedLikes /> Should render self 1`] = `
+<span
+  class="FeedLikes"
+>
+  <span
+    class="Likes__Icon"
+  >
+    <span
+      class="icon"
+    />
+  </span>
+  <span
+    class="Likes__Count is-size-6"
+  />
+</span>
+`;

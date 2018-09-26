@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeedHeader /> Should render self 1`] = `
+<div
+  class="FeedHeader"
+>
+  <p
+    class="title has-text-weight-normal is-3"
+  />
+  <p
+    class="subtitle is-6"
+  >
+    By
+      
+    <span
+      class="Separator"
+    >
+      ·
+    </span>
+    almost NaN years
+     ago 
+  </p>
+</div>
+`;

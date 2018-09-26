@@ -5,7 +5,7 @@ import FeedLikes from "./index"
 describe("<FeedLikes />", () => {
   afterEach(cleanup)
   it("Should render self", () => {
-    const { container } = render(<FeedLikes />)
+    const { container } = render(<FeedLikes feed={{}} />)
     expect(container.firstChild).toBeTruthy()
     expect(container.firstChild).toMatchSnapshot()
   })
