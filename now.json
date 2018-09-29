@@ -1,6 +1,10 @@
 {
   "type": "static",
+  "files": ["./client"],
+  "alias": "gcc.azapata.io",
+  "name": "go-cleary-challange",
   "static": {
+    "public": "./client",
     "rewrites": [
       {
         "source": "**",

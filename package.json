@@ -1,5 +1,5 @@
 {
-  "name": "TestProject",
+  "name": "FE Challange",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "lint:fix": "eslint . --ext .js,.jsx --fix",
     "dev": "NODE_ENV=development webpack-dev-server --mode=development --open --hot",
     "build": "NODE_ENV=production webpack --mode=production",
-    "deploy": "yarn build && cd client/ && now --local-config=../now.json && cd .."
+    "deploy": "now && now alias"
   },
   "dependencies": {
     "autoprefixer": "^9.1.5",
